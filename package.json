@@ -1,0 +1,47 @@
+{
+  "name": "@darrenfang/custom-mui-components",
+  "version": "1.0.0",
+  "description": "Custom MUI components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/darrenfang/custom-mui-components.git",
+  "author": "Darren Fang <idarrenfang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "tsc": "yarn clean && tsc --build tsconfig.json",
+    "prerelease": "yarn tsc && yarn publish --tag beta --registry https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@icon-park/react": "1.4.2",
+    "@mui/icons-material": "5.6.2",
+    "@mui/lab": "5.0.0-alpha.81",
+    "@mui/material": "5.7.0",
+    "@mui/system": "5.7.0",
+    "@mui/x-date-pickers": "5.0.0-alpha.2",
+    "date-fns": "2.28.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.2",
+    "tslib": "2.3.1",
+    "typescript": "4.6.4"
+  },
+  "peerDependencies": {
+    "@icon-park/react": "^1.4.2",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/lab": "^5.0.0-alpha.81",
+    "@mui/material": "^5.7.0",
+    "@mui/system": "^5.7.0",
+    "@mui/x-date-pickers": "^5.0.0-alpha.2",
+    "date-fns": "^2.28.0",
+    "next": ">=12.x",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  }
+}
