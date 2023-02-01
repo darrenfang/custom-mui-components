@@ -51,6 +51,7 @@ export function CustomSelect(props: Props) {
     inputHoverColor,
     inputFocusBackgroundColor,
     hoverColor,
+    fullWidth,
     ...remainProps
   } = props
 
@@ -155,7 +156,7 @@ export function CustomSelect(props: Props) {
             :
             <Select
               {...remainProps}
-              fullWidth
+              fullWidth={fullWidth === undefined ? true : fullWidth}
               variant='standard'
               value={input || ''}
               size={size || 'small'}
