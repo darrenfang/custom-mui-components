@@ -27,6 +27,7 @@ export function CustomPaper(props: Props) {
       sx={sx}
     >
       <Box
+        className='paper-head'
         sx={{
           px: 2,
           py: 1,
@@ -46,7 +47,7 @@ export function CustomPaper(props: Props) {
           {action}
         </Box>
       </Box>
-      <Box>
+      <Box className='paper-content'>
         {children}
       </Box>
     </Paper>
