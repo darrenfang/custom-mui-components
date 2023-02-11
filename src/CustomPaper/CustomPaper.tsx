@@ -23,7 +23,7 @@ export function CustomPaper(props: Props) {
   return (
     <Paper
       {...remainProps}
-      elevation={remainProps.elevation || 8}
+      elevation={remainProps.elevation === undefined ? 8 : remainProps.elevation}
       sx={sx}
     >
       <Box
