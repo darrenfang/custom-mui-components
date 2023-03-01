@@ -39,7 +39,10 @@ export function CustomLoadingButton(props: Props) {
   return (
     <Button
       sx={{
-        opacity: loading ? '0.6' : 1
+        opacity: loading ? '0.6' : 1,
+        '& .MuiButton-startIcon': {
+          mr: 0
+        }
       }}
       {...remainProps}
       size={size}
